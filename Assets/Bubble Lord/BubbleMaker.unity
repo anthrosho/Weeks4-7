@@ -276,13 +276,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 730c94b9a7bf60549b73848ce13100c1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bubblePrefab: {fileID: 0}
-  bubbleSpawning: 0
-  spawnTime: 1
-  spawnHeight: -5
-  floatSpeed: 1
-  swirlSpeed: 1
-  directionChange: 1
 --- !u!1 &955489182
 GameObject:
   m_ObjectHideFlags: 0
@@ -380,6 +373,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 445b59a3579f77840af641c7da490ba8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bubblePrefab: {fileID: 1775176155}
+  Make: {fileID: 1775176155}
+  spawnInterval: 1
+  spawnHeight: -5
 --- !u!1 &1169158523
 GameObject:
   m_ObjectHideFlags: 0
@@ -548,6 +545,11 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1775176155 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6339082983264473934, guid: 7891b6dcd2c490946907f225cd38479f, type: 3}
+  m_PrefabInstance: {fileID: 786224300}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1900127740
 GameObject:
   m_ObjectHideFlags: 0
