@@ -12,17 +12,16 @@ public class BubblesMove : MonoBehaviour
 
     private float timeCounter = 0f; 
 
-    // Start is called before the first frame update
     void Start()
     {
         currentSwirl = 1f; 
         
     }
 
-    // Update is called once per frame
     void Update()
     {
-        timeCounter += Time.deltaTime;
+        //Swirl logic! We take previous and make it equal to current and then - that.
+        timeCounter += Time.deltaTime; // make Time = to delta time for tracking. 
         if (timeCounter > directionChange)
 
         {
@@ -30,11 +29,11 @@ public class BubblesMove : MonoBehaviour
             currentSwirl = -currentSwirl;
             timeCounter = 0f;
         }
-
+        //SWIRLLLLLLLLLLL 
         float UpDownMovement = currentSwirl * swirlSpeed * Time.deltaTime;
         float SideWayMovement = floatSpeed * Time.deltaTime;
 
         transform.position += new Vector3(UpDownMovement, SideWayMovement, 0);
-            
+            //Using Vector3 functions to update transform position.
     }
 }

@@ -2,16 +2,17 @@ using UnityEngine;
 
 public class BubbleDestroy : MonoBehaviour
 {
-    public float floatSpeed = 1.0f; 
-    public float destroyHeight = 20f; 
+    public float destroyHeight = 5f;
 
     void Update()
     {
-        transform.position += new Vector3(0, floatSpeed * Time.deltaTime, 0);
+        // Tracks the position 
+        transform.Translate(Vector3.up * Time.deltaTime);
 
+        // Destroy when reaching height
         if (transform.position.y >= destroyHeight)
         {
-            Destroy(gameObject); 
+            Destroy(gameObject); //I wonder what this does! 
         }
     }
 }
